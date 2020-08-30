@@ -1,11 +1,13 @@
 import Head from 'next/head'
 // import styles from '../styles/Home.module.css'
 
-export default function Home() {
+export default function Home({ addToHome }) {
   return (
-    <div>
+    <>
+      <button id="btn-install-app" onClick={addToHome} className="btn">Install App</button>
+
       <h1>Home</h1>
-      HELLO WORLD
-    </div>
+        HELLO WORLD
+    </>
   )
-}
+} 
