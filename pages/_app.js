@@ -43,7 +43,7 @@ function MyApp({ Component, pageProps }) {
         console.log("Service worker not supported");
       }
     }
-  }, [])
+  })
 
   const addToHome = (e) => {
     if (deferedPrompt) {
